@@ -20,36 +20,39 @@
   <!-- <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css"> -->
 
-  <meta name="theme-color" content="#2469A6">
+  <!-- <meta name="theme-color" content="#2469A6"> -->
 </head>
 
 <body>
-  <header>
-    <div>
-      <nav>
-        <h1>Nastassia Martin</h1>
-  
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-  
-      </nav>
+  <header class="header-main">
+    <div class="header-container">
+          <h1>Nastassia Martin</h1>
+          <nav class="header-nav" id="menu">
+            <ul class="header-nav-items">
+              <li><a href="#about">About</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
     </div>
   </header>  
   
   <main>
     <!--About-->
-    <section class="about">
-      <h2>About</h2>
+    <section >
+      <div class="about">
+        <h2>Hey!<br>I'm Nastassia</h2>
       
-      <img src="images/NastassiaMartinprofilepic.jpg" alt="Profile picture of Nastassia. She has black hair and wears glasses" width="150">
+        <img src="images/NastassiaMartinprofilepic.jpg" alt="Profile picture of Nastassia. She has black hair and wears glasses" width="150">
       
-      <p>Hi! My name is Nastassia, and I am studying to be a <strong>Front End Developer</strong>. I am in my first year at Medieinstitute in Malmö, Sweden. My background is in hospitality, with over 15 years experience of working in restuarants and bars, and most recently have run a successful alcohol free drinks business. 
-      Hospitality has sharpened my skills which I believe are critical to becoming a successful <strong>web developer</strong>: client service, attention to detail and problem solving.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate ratione qui odit optio magnam, laboriosam dolor placeat tenetur culpa dolore? Inventore voluptatum doloribus, voluptatem animi ut deserunt aperiam accusantium velit!
+        </p>
+
+        <div class="email">
+        <button class="btn-contact">Email me</button>
+        </div>
+      </div>
       
-      <p>I am actively searching for <strong>internship opportunities</strong>. I would love to <a href="mailto:nastassia.martin@medieinstitutet.se">chat</a> if you feel I would make a good match for your company.</p>
 
       
       <!--"lets work togeether" section be in each page? -->
@@ -57,16 +60,29 @@
     </section>
     
     <section>
-      <h2 class="portfolio">Portfolio</h2>
+      <div class="portfolio">
+        <h2>Portfolio</h2>
     
-      <p>I'm a newbie so my portfolio is limited for now. The list below links to projects I've done through <a href="https://medieinstitutet.se" target="blank">Medieinstitut</a>, <a href="https://www.theodinproject.com" target="_blank">The Odin Project</a>, and <a href="https://leonnoel.com/100devs/" target="_blank">100 devs</a>.</p>
-  
-      <ul>
-        <li> <a href="https://github.com/nastassia-martin/odin-recipes" target="_blank">Recipes</a></li>
-        <li> <a href="https://github.com/nastassia-martin/mi-html-css-preppuppgift" target="_blank">Preppuppgift</a></li>
-        <li> <a href="https://github.com/nastassia-martin" target="_blank">Future project</a></li>
-      </ul>
-
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis inventore est quae fugiat hic, rem consequuntur, et labore deserunt in vero nisi pariatur nam libero sunt doloremque ratione laborum velit.</p>
+        <div class="portfolio-grid">
+          <div class="portfolio-example">
+            <a href="#"></a>
+              <img src="" alt="barbershop project">
+              <span>Barbershop project</span>
+          </div>
+          <div class="portfolio-example">
+            <a href="#"></a>
+              <img src="" alt="barbershop project">
+              <span>Barbershop project</span>
+          </div>
+          <div class="portfolio-example">
+            <a href="#"></a>
+              <img src="" alt="barbershop project">
+              <span>Barbershop project</span>
+          </div>
+        </div>
+        
+      </div>
     </section>
     <!--Do I Need this section??????-->
     <!--<section>
@@ -86,11 +102,15 @@
     </section>
   -->
     <section>
-      <h2 class="contact">Contact</h2>
+      <div>
 
-      <p>
-        You can find my portfolio on <a href="https://github.com/nastassia-martin">Github</a>, I am active on <a href="https://www.linkedin.com/in/nastassia-martin-348880150/">Linkedin</a>, and thinking out loud on <a href="https://twitter.com/NastassiaCodes">Twitter</a>. 
-      </p>
+      
+        <h2 class="contact">Contact</h2>
+
+        <p>
+          You can find my portfolio on <a href="https://github.com/nastassia-martin">Github</a>, I am active on <a href="https://www.linkedin.com/in/nastassia-martin-348880150/">Linkedin</a>, and thinking out loud on <a href="https://twitter.com/NastassiaCodes">Twitter</a>. 
+        </p>
+      </div>
     </section>
 
   
@@ -103,22 +123,17 @@
     <a href="https://twitter.com/NastassiaCodes"><img src="images/2021-Twitter-logo-blue.png" alt="twitter icon" width="32"></a>
     <a href="https://github.com/nastassia-martin"><img src="images/GitHub-Mark-32px.png" alt="github icon"></a>
   </Footer>
-
-
-  
-
-
-
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+    const menuBtn = document.querySelector('#menu-btn');
+    menuBtn.addEventListener('click', () => {
+        const menu = document.getElementById("menu");
+        if( menu.style.display == "block") {
+            menu.style.display = "none"
+        } else {
+            menu.style.display = "block"
+        }
+    });
+    </script>
 </body>
 
 </html>

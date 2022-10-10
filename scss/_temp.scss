@@ -1,0 +1,141 @@
+$light-color: #F4F4F4;
+$primary-color: #2469A6;
+$secondary-color: #F2854E;
+// third color? #A78B85;
+$font-stack: 'Lato', sans-serif;
+
+@import 'buttons';
+
+body {
+    background-color: $light-color;
+    font-family: $font-stack;
+    font-weight: normal;
+    line-height: 150%;
+    font-size: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+h1 {
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+img {
+    max-width: 100%;
+}
+
+
+header {
+    background-color: $primary-color;
+    color: $light-color;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+    margin: 0 auto;
+    text-transform: uppercase;
+
+
+// // could put a gradient in mobile version to create interest
+    div {
+        padding: 10px 20px;
+        margin: 0;
+    }
+
+    // nav {
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: space-between;
+    //     font-size: 1em;
+
+        .menu {
+            display: none;
+            position: re
+        }
+        
+            .menu-items {
+                padding: 10px;
+                text-transform:uppercase;
+                position: inherit;
+                display: flex;
+                flex-direction: column;
+                margin-top: 0;
+                top: 40px;
+                right: 5px;
+            }
+        a {
+            color: $light-color;
+        }
+        a:hover {
+            color: $secondary-color;
+        }
+    
+    }
+// }
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background: $light-color;
+    
+
+    section {
+        height:100%vh;
+        width: 80vw;
+        padding: 10px 10px 10px 10px;
+        margin: 20px 15px 15px 15px;
+        background-color: $light-color;
+        
+    }
+}
+
+  
+.about {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    
+    img {
+        display: none;
+        // display image in ipad & desktop view
+    }
+
+    h2 {
+        font-size: 3em;
+        font-weight: 300;
+        line-height: 1.2;
+        margin-top: 40px;
+    }
+    p {
+        line-height: 2;
+        margin: 20px 0;
+    }
+    div {
+        margin: 20px 0;
+        align-self: center;
+    }
+    }
+    
+
+    
+
+
+
+// // screen ipad: 
+// // ul {
+// //     display: flex;
+// //     list-style-type: none;
+// // }
+
