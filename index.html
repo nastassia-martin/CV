@@ -13,6 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"> 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/ce9ec11bb4.js" crossorigin="anonymous"></script>
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <link rel="stylesheet" href="css/style.css">
@@ -36,29 +37,22 @@
           </nav>
     </div>
   </header>  
-  
   <main>
     <!--About-->
-    <section >
+    <section>
       <div class="about">
-        <h2>Hey!<br>I'm Nastassia</h2>
-      
-        <img src="images/NastassiaMartinprofilepic.jpg" alt="Profile picture of Nastassia. She has black hair and wears glasses" width="150">
-      
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate ratione qui odit optio magnam, laboriosam dolor placeat tenetur culpa dolore? Inventore voluptatum doloribus, voluptatem animi ut deserunt aperiam accusantium velit!
-        </p>
-
+        <h2 class="about-h2">Hey! I'm Nastassia, <span class="blink"></span></h2>
+        <h4>I am studying to be a Front End developer at Medieinstitutet, in Malmö, Sweden.</h4>  
+        <div class="about-me">
+          <p>Tech is an ever evolving industry and I love being in an environment where I learn and am challenged everyday. I am excited to work in <strong>web development</strong>  because I love to solve problems and learn everyday. After several years in hospitality I look forward to bringing keen attention to detail and strong client service skills.</p>
+          <img src="images/NastassiaMartinprofilepic.jpg" alt="Profile picture of Nastassia. She has black hair and wears glasses" width="150">
+        </div>
         <div class="email">
-        <button class="btn-contact">Email me</button>
+          <a href="mailto:nastassia.martin@medieinstitutet.se"><button class="btn-contact">Email me</button></a>
         </div>
       </div>
-      
-
-      
       <!--"lets work togeether" section be in each page? -->
-  
     </section>
-    
     <section>
       <div class="portfolio">
         <h2>Portfolio</h2>
@@ -67,19 +61,22 @@
         <div class="portfolio-grid">
           <div class="portfolio-example">
             <a href="#"></a>
-              <img src="" alt="barbershop project">
+              <img src="" alt="barbershop project" width="150">
               <span>Barbershop project</span>
           </div>
           <div class="portfolio-example">
             <a href="#"></a>
-              <img src="" alt="barbershop project">
+              <img src="" alt="barbershop project" width="150">
               <span>Barbershop project</span>
           </div>
           <div class="portfolio-example">
             <a href="#"></a>
-              <img src="" alt="barbershop project">
+              <img src="" alt="barbershop project" width="150">
               <span>Barbershop project</span>
+          <div>
+            <i class="fa-solid fa-angle-up"></i>
           </div>
+            </div>
         </div>
         
       </div>
@@ -101,27 +98,37 @@
       </ul>
     </section>
   -->
-    <section>
-      <div>
-
-      
-        <h2 class="contact">Contact</h2>
-
-        <p>
-          You can find my portfolio on <a href="https://github.com/nastassia-martin">Github</a>, I am active on <a href="https://www.linkedin.com/in/nastassia-martin-348880150/">Linkedin</a>, and thinking out loud on <a href="https://twitter.com/NastassiaCodes">Twitter</a>. 
+    <section class="contact">
+      <div class="contact">
+        <h2>Contact</h2>
+        <p>I am actively looking for <strong>internship opportunities</strong>! Get in touch if you think we could make a good match! 
         </p>
+        <form class="form" action="">
+          <fieldset class="web-contact">
+            <label for="first-name">Full name</label>
+            <input type="text" name="full-name" placeholder="Your name" required>
+            <label for="email-address">Email</label>
+            <input type="email" name="email-address" placeholder="youremail@domain.com" required>
+            <label for="phone-number">Phone number</label>
+            <input type="tel" name="phone-number" placeholder="0712345678">
+            <input class="btn-form" type="submit" name="submit" value="send">
+          </fieldset>
+        </form>
+       
       </div>
     </section>
-
-  
   </main>
-  
-
-  <Footer>
-    <p>&copy; Nastassia Martin 2022</p>
-    <a href="https://www.linkedin.com/in/nastassia-martin-348880150/"><img src="images/LI-In-Bug.png" alt="Linkedin icon" width="32"></a>
-    <a href="https://twitter.com/NastassiaCodes"><img src="images/2021-Twitter-logo-blue.png" alt="twitter icon" width="32"></a>
-    <a href="https://github.com/nastassia-martin"><img src="images/GitHub-Mark-32px.png" alt="github icon"></a>
+  <Footer class="footer-main">
+    <div class="footer-container">
+      <p>&copy; Nastassia Martin 2022</p>
+        <nav class="footer-nav"></nav>
+          <ul class="footer-nav-items">
+            <li><a href="https://www.linkedin.com/in/nastassia-martin-348880150/"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="https://twitter.com/NastassiaCodes"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="https://github.com/nastassia-martin"><i class="fa-brands fa-github"></i></a></li>
+          </ul>
+        </nav>
+    </div>
   </Footer>
   <script>
     const menuBtn = document.querySelector('#menu-btn');

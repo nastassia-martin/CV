@@ -1,10 +1,11 @@
-$light-color: #F4F4F4;
-$primary-color: #2469A6;
-$secondary-color: #F2854E;
+$light-color: rgb(244, 244, 244);
+$primary-color: rgb(36, 105, 166);
+$secondary-color: rgb(242, 133, 78);
 // third color? #A78B85;
 $font-stack: 'Lato', sans-serif;
 
 @import 'buttons';
+@import 'mediaq';
 
 // reset
 * {
@@ -31,15 +32,17 @@ body {
     img {
         max-width: 100%;
     }
+    strong {font-weight: normal;}
 }
 // fonts
 h1 {
     font-size: 2em;
     font-weight: 300;
+    border-bottom: 1px solid $secondary-color;
 }
 
 h2 {
-    font-size: 1.5em;
+    font-size: 1.8em;
 }
 section {
     font-size: 1.1em;
@@ -56,7 +59,7 @@ section {
     .header-container {
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
         flex-wrap: wrap;
         width: 960px;
         max-width: 100%;
@@ -68,7 +71,8 @@ section {
         text-align: center;
     
         li {
-            display: inline;
+            display: none;
+            
         
             a {
                 display: inline-block;
@@ -81,13 +85,20 @@ section {
         }
     }
 }
-
-
+@media all and (min-width: 720px) {
+.header-main .header-container {
+    justify-content: space-around;
+}
+.header-container .header-nav .header-nav-items li {
+    display: inline;
+}
+};
+ 
 main {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    // background-color: $primary-color;
+    // background-color: rgba(36, 105, 166, 0.1);
 }
 section {
     padding: 2em;
@@ -97,10 +108,18 @@ section {
     flex-direction: column;
     border: 1px solid $secondary-color;
 }
-.about {
-    border: $primary-color solid 1px;
-    padding: 3em 0 0;
 
+// about section 
+section .about {
+    // border: $primary-color solid 1px;
+    display: flex;
+    flex-direction: column;
+
+    h4 {
+        margin: 2em 0 0;
+        font-size: 1.4em;
+        font-weight: 300;
+    }
     img {
         display: none;
     }
@@ -113,24 +132,127 @@ section {
         margin: 2em 0 0;
     }
 }
+.about-h2 {
+    display: inline-block;
+    border: none;
+    font-weight: 300;
+}
+@media all and (min-width: 720px) {
+    section .about img {
+        display:block
+    }
+
+    .about-me {
+        display: flex;
+        flex-wrap: wrap;
+        // justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        
+        p {
+            width: 70%;
+        }
+    }
+    section .about .email {
+        justify-content: flex-start
+    }
+    }
+
+// porfolio section
 .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 5px;   
 }
 
-.portfolio-grid .portfolio-example:nth-child(1) {
-    grid-column: 1/13;
-    grid-row: 1;
+.portfolio-grid .portfolio-example {
+    grid-column: 1/13; 
 }
-.portfolio-grid .portfolio-example:nth-child(2) {
-    grid-column: 1/6;
-    grid-row: 2;
+
+@media all and (min-width: 720px) {
+    .portfolio-grid .portfolio-example:nth-child(1) {
+        grid-column: 1/13;
+        grid-row: 1;
+    }
+    .portfolio-grid .portfolio-example:nth-child(2) {
+        grid-column: 1/6;
+        grid-row: 2;
+    }
+    .portfolio-grid .portfolio-example:nth-child(3) {
+        grid-column: 7/13;
+        grid-row: 2;
+    }
 }
-.portfolio-grid .portfolio-example:nth-child(3) {
-    grid-column: 7/13;
-    grid-row: 2;
+
+
+form {
+    margin: 22px 0;
+    
+    .web-contact {
+        border: none
+    }
+
+    input {
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 100%;
+        color: black;
+        display: block;
+        padding: 5px 8px; 
+        margin: 5px 0;
+    }   
+
+    @media all and (min-width: 720px) {
+        // why isnt this working?!
+        
+        .contact {
+            align-items: center;
+        }
+        .form {
+            display: flex;
+        }
+
+        // why isnt this working?!
+        .web-contact {
+            width: 70%;
+        }
+        
+        }
+
 }
+
+
+.footer-main {
+    background-color: $primary-color;
+    color: $light-color;
+    max-width: 100%;
+    text-transform: uppercase;
+
+    .footer-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 960px;
+        max-width: 100%;
+        padding: 20px;
+        margin: 0 auto;
+    }
+        
+        p {
+            font-weight: 300;
+            border-top: 1px solid $secondary-color;
+        }
+        .footer-nav-items li {
+            display: inline-block;
+            margin: 0 10px;
+        }  
+    .fa-brands {
+        color: #F2854E;
+    }  
+}
+
+
 
 // maybe i only want to display nav from ipad size and up
 
