@@ -8,14 +8,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta property="og:title" content="Nastassia Martin | Front End Developer">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
   <link rel="preconnect" href="https://fonts.googleapis.com"> 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/ce9ec11bb4.js" crossorigin="anonymous"></script>
   <link rel="apple-touch-icon" href="icon.png">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/ce9ec11bb4.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header class="header-main">
@@ -31,7 +29,6 @@
     </div>
   </header>  
   <main>
-    <a id="top"></a>
     <!--About-->
     <section>
       <div class="about" id="about">  
@@ -39,16 +36,17 @@
         <p>I am studying to be a Front End developer at Medieinstitutet, in Malmö, Sweden.</p>  
         <div class="about-container">
           <div class="about-me">
-            <p>Tech is an ever evolving industry and I love being in an environment where I learn and am challenged everyday. I am excited to work in <strong>web development</strong>  because I love to solve problems and learn everyday. After several years in hospitality I look forward to bringing keen attention to detail and strong client service skills.</p>
+            <p>Tech is an ever evolving industry and I love being in an environment where I learn and am challenged everyday. I am excited to work in web development because I love to solve problems and learn everyday. After several years in hospitality I look forward to bringing keen attention to detail and strong client service skills.</p>
             <div class="email">
-              <a href="mailto:nastassia.martin@medieinstitutet.se"><button class="btn-contact">Email me</button></a>
+              <div class="email-contact" >
+                <a href="mailto:nastassia.martin@medieinstitutet.se">Email me</a>
+              </div>
+              
             </div>
           </div>
-          <img src="images/NastassiaMartinprofilepic.jpg" alt="Profile picture of Nastassia. She has black hair and wears glasses" width="150">
+          <img src="images/NastassiaMartinprofilepic-sm.jpg" alt="Profile picture of Nastassia. She has black hair and wears glasses" width="150">
         </div>
-        
       </div>
-      <!--"lets work togeether" section be in each page? -->
     </section>
     <section>
       <div class="portfolio" id="portfolio">
@@ -59,66 +57,28 @@
         </div>
         <div class="portfolio-grid">
           <div class="portfolio-example">
-              <img src="images/barbershop/barbershop-538.jpg" alt="barbershop project" width="538" height="404" class="portfolio-img">
+              <img src="images/barbershop-538.jpg" alt="barbershop project" width="538" height="404" class="portfolio-img">
               <div class="text">
                 <span>Barbershop project<a href="#"></a></span>
               </div>
           </div>
-        
           <div class="portfolio-example">
             <img src="images/your-project.jpg" alt="your project" width="538" height="303" class="portfolio-img">
             <div class="text">
               <span>Your project<a href="#"></a></span>
             </div>
-          <!--working on src set-->
-          <!-- <div class="portfolio-example">
-            
-              <img
-              srcset="images/barbershop/barbershop-388.jpg 480w, images/barbershop/barbershop-538.jpg 720w, images/barbershop/barbershop-640.jpg 900w"
-              src="images/barbershop/barbershop-388.jpg" 
-              sizes="50vw"
-              alt="barbershop project" 
-              class="portfolio-img">
-              <div class="text">
-              <span><a href="#">Barbershop project</a></span>
-            
-            
-            </div> -->
-            <!-- <div class="portfolio-example">
-              <img src="images/barbershop/barbershop-640.jpg" alt="barbershop project" width="150" class="portfolio-img">
-              <div class="text">
-                <span><a href="#">Barbershop project</a></span>
-              </div>
-          </div> -->
           </div>
-          
         </div>
-        
       </div>
     </section>
-    <!--Do I Need this section??????-->
-    <!--<section>
-      <h2>Education & Experience</h2>
-  
-      <p>A lot of studying between 2005 - 2008, gaining a Bachelor <strong>degree</strong> with Honours in English Literature & Language from King's College London</p>
-      <p>Worked in hospitality between 2008 - 2021</p>
-      <p>Self-study in front end from 2021</p>
-      
-      <h3>Skills</h3>
-      <h4>Languages</h4>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-      </ul>
-    </section>
-  -->
     <section class="contact" id="contact">
       <div class="contact">
         <h2>Contact</h2>
-        <p>I am actively looking for <strong>internship opportunities</strong>. Get in touch if you think we could make a good match! 
+        <p>I am actively looking for internship opportunities, and am open to remote working. Reach out if you think we could make a good match! <br>
+          <br>
+          <i class="fa-regular fa-envelope"></i> <a href="mailto:nastassia.martin@medieinstitutet.se">nastassia.martin@medieinstitutet.se</a>
         </p>
-        <form class="form" action="">
+        <!-- <form class="form" action="">
           <fieldset class="web-contact">
             <label for="first-name">Full name</label>
             <input type="text" name="full-name" placeholder="Your name" required>
@@ -128,35 +88,21 @@
             <input type="tel" name="phone-number" placeholder="0712345678">
             <input class="btn-form" type="submit" name="submit" value="send">
           </fieldset>
-        </form>
-       
+        </form> -->
       </div>
     </section>
-    <a href="#top"><i class="fa-solid fa-arrow-up"></i></a>
   </main>
   <Footer class="footer-main">
     <div class="footer-container">
       <p>&copy; Nastassia Martin 2022</p>
-        <nav class="footer-nav"></nav>
+        <nav class="footer-nav">
           <ul class="footer-nav-items">
-            <li><a href="https://www.linkedin.com/in/nastassia-martin-348880150/"><i class="fa-brands fa-linkedin"></i></a></li>
-            <li><a href="https://twitter.com/NastassiaCodes"><i class="fa-brands fa-twitter"></i></a></li>
-            <li><a href="https://github.com/nastassia-martin"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/nastassia-martin-348880150/" aria-label="link to linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="https://twitter.com/NastassiaCodes" aria-label="link to twitter"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="https://github.com/nastassia-martin" aria-label="link to github"><i class="fa-brands fa-github"></i></a></li>
           </ul>
         </nav>
     </div>
   </Footer>
-  <!-- <script>
-    const menuBtn = document.querySelector('#menu-btn');
-    menuBtn.addEventListener('click', () => {
-        const menu = document.getElementById("menu");
-        if( menu.style.display == "block") {
-            menu.style.display = "none"
-        } else {
-            menu.style.display = "block"
-        }
-    });
-    </script> -->
 </body>
-
 </html>
