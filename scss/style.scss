@@ -330,6 +330,7 @@ h2 + p {
 @media all and (max-width: 375px) {
     .email-me {
         font-size: 0.9em;
+        width: fit-content;
     }
 }
 
