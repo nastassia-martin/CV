@@ -318,6 +318,16 @@ h2 + p {
         grid-auto-rows: 400px;
     }
 }
+@media all and (max-width: 450px) {
+    .text {
+        z-index: 999;
+        opacity: inherit;
+        width: 100%;
+        font-weight: 300;
+        color: white;
+    
+}
+
 
 
 .fa-envelope {
@@ -330,11 +340,11 @@ h2 + p {
 @media all and (max-width: 375px) {
     .email-me {
         font-size: 0.9em;
-        width: fit-content;
+        width: 100%;
+        text-align: center;
     }
-    .fa-envelope {
-        display: none;
-    }
+
+    
 }
 
 // form {
