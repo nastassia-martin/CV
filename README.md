@@ -1,3 +1,3 @@
 # CV
 
-First attempt at web developer CV.
+My web developer skills highlighting my HTML & CSS skills. 
