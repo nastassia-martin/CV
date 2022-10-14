@@ -325,6 +325,7 @@ h2 + p {
         width: 100%;
         font-weight: 300;
         color: white;
+        text-transform: capitalize;
     }
 
 }
@@ -389,19 +390,7 @@ h2 + p {
     //         width: 70%;
     //     }
     // }
-.fa-arrow-up {
-    position: fixed;
-    top: 450px;
-    margin-top: 185px;
-    font-size: 2em;
-    left: 90vw;
-    color: $secondary-color;
-}
-@media all and (min-width: 720px) {   
-.fa-arrow-up {
-        display: none;
-    } 
-}
+
 
 .footer-main {
     background-color: $primary-color;
