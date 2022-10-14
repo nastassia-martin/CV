@@ -202,7 +202,6 @@ section .about {
 }
 h2 + p {
     margin: 2em 0 0;
-    font-size: 1.4em;
     font-weight: 100;
 }
 
@@ -320,12 +319,18 @@ h2 + p {
     }
 }
 
+
 .fa-envelope {
     color: $primary-color
 }
 .contact a:hover {
     color: $primary-color; 
+}
 
+@media all and (max-width: 375px) {
+    .email-me {
+        font-size: 0.9em;
+    }
 }
 
 // form {
@@ -366,19 +371,19 @@ h2 + p {
     //         width: 70%;
     //     }
     // }
-// .fa-arrow-up {
-//     position: fixed;
-//     top: 450px;
-//     margin-top: 185px;
-//     font-size: 2em;
-//     left: 90vw;
-//     color: $secondary-color;
-// }
-// @media all and (min-width: 720px) {   
-// .fa-arrow-up {
-//         display: none;
-//     } 
-// }
+.fa-arrow-up {
+    position: fixed;
+    top: 450px;
+    margin-top: 185px;
+    font-size: 2em;
+    left: 90vw;
+    color: $secondary-color;
+}
+@media all and (min-width: 720px) {   
+.fa-arrow-up {
+        display: none;
+    } 
+}
 
 .footer-main {
     background-color: $primary-color;
@@ -417,6 +422,6 @@ h2 + p {
 }
 @media screen and (min-width: 620px) {
     .fa-brands {
-        font-size: 3em;
+        font-size: 2em;
     }
 }
